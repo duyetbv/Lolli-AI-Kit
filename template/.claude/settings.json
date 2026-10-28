@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "deny": [
+      "Read(./wp-config.php)",
+      "Edit(./wp-config.php)",
+      "Edit(./wp-admin/**)",
+      "Edit(./wp-includes/**)",
+      "Edit(./wp-content/plugins/advanced-custom-fields-pro/**)",
+      "Edit(./wp-content/plugins/advanced-custom-fields/**)",
+      "Edit(./wp-content/plugins/polylang-pro/**)",
+      "Edit(./wp-content/plugins/contact-form-7/**)",
+      "Edit(./wp-content/plugins/better-wp-security/**)",
+      "Edit(./wp-content/themes/twentytwenty*/**)",
+      "Edit(./wp-content/uploads/**)"
+    ],
+    "ask": [
+      "Bash(wp plugin install:*)",
+      "Bash(wp plugin delete:*)",
+      "Bash(wp db:*)",
+      "Bash(wp search-replace:*)",
+      "Bash(git push:*)"
+    ],
+    "allow": [
+      "Bash(wp option get:*)",
+      "Bash(wp plugin list:*)",
+      "Bash(wp core version:*)",
+      "Bash(php -l:*)",
+      "Bash(phpcs:*)"
+    ]
+  }
+}
